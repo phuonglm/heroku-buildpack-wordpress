@@ -73,7 +73,7 @@ cd ${BUILD_DIR}
 if [ ! -d ./vendor/php ]; then
   echo "-----> Installing PHP v${PHP_VERSION}"
   mkdir -p ./vendor/php && cd ./vendor/php
-  curl --silent --max-time 60 --location $PHP_URL | tar xz
+  curl --silent --max-time 600 --location $PHP_URL | tar xz
 fi
 
 # WordPress
